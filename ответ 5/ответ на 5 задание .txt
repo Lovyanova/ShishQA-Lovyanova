@@ -1,0 +1,32 @@
+Задание 5: Написать запросы, покрывающие следующие требования
+
+1. Посмотреть, сколько клиентов из Германии (SELECT, WHERE, COUNT).
+2. Посмотреть, имена скольких клиентов оканчиваются на на 'e' (LIKE).
+3. Прислать запрос и скриншот с Вашим именем, вставленным в таблицу Customers (INSERT, SELECT).
+4. Изменить собственное имя, вставленное в таблицу Customers (UPDATE, SELECT), сделать скриншот и прислать запрос.
+5. Удалить всех клиентов из города Nantes. Прислать запрос и результат (DELETE).
+
+Ответы:
+1. SELECT country FROM Customers
+   WHERE COUNTRY = 'Germany';
+Результат: 11 клиентов
+
+2. SELECT CustomerName FROM Customers
+   WHERE CustomerName LIKE '%e';
+Результат: 14 клиентов  
+
+3. INSERT INTO Customers (CustomerName)
+   VALUES ('Olga Lovyanova');
+ (результ - вложенный PDF файл)
+ 
+4. UPDATE Customers
+   SET CustomerName = 'Olya Lova'
+   WHERE CustomerID = 92;
+(результ - вложенный PDF файл)
+
+5. DELETE FROM Customers
+   WHERE City = Nantes;
+(результ - вложенный PDF файл)
+
+
+
