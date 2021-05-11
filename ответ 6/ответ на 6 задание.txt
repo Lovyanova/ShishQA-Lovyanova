@@ -1,9 +1,0 @@
-Задание 6. Прислать номера заказов (OrderID), оформленных для клиентов работником с именем Steven (FirstName) (INNER JOIN).
-Все запросы и ответы записать в файл отчёта
-
-Ответ:
-    SELECT Orders.OrderID, Employees.FirstName
-    FROM Orders
-    INNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
-	WHERE FirstName = 'Steven';
-(результ - вложенный PDF файл)	
